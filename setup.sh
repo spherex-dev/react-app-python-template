@@ -3,6 +3,6 @@
 yarn install
 cd backend
 virtualenv pybin
-. ./pybin/bin/python3
+. ./pybin/bin/activate
 pip install -r requirements.txt
 cd ..

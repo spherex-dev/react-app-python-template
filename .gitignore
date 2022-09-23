@@ -21,3 +21,15 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# reduce yarn files committed
+.yarn/unplugged
+.yarn/cache
+install-state.gz
+yarn.lock
+
+# python related files
+__pycache__
+
+# additional pnp files created on the fly by yarn
+.pnp.*

@@ -14,14 +14,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "test": "yarn start-sanic-test && react-scripts test --testURL=http://localhost:8000; yarn stop-sanic",
+    "eject": "react-scripts eject",
+    "start-sanic": "cd backend && ./run.sh && cd ..",
+    "start-sanic-test": "cd backend && ./run_test.sh && cd ..",
+    "stop-sanic": "cd backend && ./stop.sh && cd ..",
+    "jest-test": "yarn start-sanic-test && yarn jest ; yarn stop-sanic"
   },
   "browserslist": {
     "production": [
@@ -34,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest": "^29.0.3"
   }
 }

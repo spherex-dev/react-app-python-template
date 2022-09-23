@@ -1,7 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { hello } from "./utils/hello";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [greeting, setGreeting] = useState("");
+
+  useEffect(() => {
+    hello().then((res) => {
+      setGreeting(res["hello"]);
+    });
+  }, [greeting]);
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +26,7 @@ function App() {
         >
           Learn React
         </a>
+        <p>Greeting from backend is {greeting}!!</p>
       </header>
     </div>
   );

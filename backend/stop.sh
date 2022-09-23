@@ -1,0 +1,1 @@
+kill -1 $(cat sanic.pid) && rm sanic.pid

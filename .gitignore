@@ -30,6 +30,7 @@ yarn.lock
 
 # python related files
 __pycache__
+backend/sanic.pid
 
 # additional pnp files created on the fly by yarn
 .pnp.*

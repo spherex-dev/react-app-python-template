@@ -2,6 +2,8 @@
 
 This starter template combines a react single page application with a python sanic backend. Modifications have been added to the sanic backend to allow cors from any host to interact with the single page app during the development phase.
 
+If you wish to see animated installation, testing and running of this application. Please see [this](https://www.spherex.dev/how-to-use-react-with-a-python-backend/) post at our development blog.
+
 ## Prerequisites
 
 To use this template, ensure that the following commands are available in your environment
